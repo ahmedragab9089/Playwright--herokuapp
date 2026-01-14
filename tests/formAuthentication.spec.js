@@ -3,7 +3,7 @@ import { FormAuthenticationPage } from '../pages/FormAuthenticationPage';
 
 
 test("Login using valid credentials", async ({page, basePage}) =>{
-    await basePage.openFormAuthentication();
+    await basePage.openFormAuthenticationPage();
     const formAuthenticationPage = new FormAuthenticationPage(page);
     await formAuthenticationPage.enterUsername("tomsmith");
     await formAuthenticationPage.enterPassword("SuperSecretPassword!");

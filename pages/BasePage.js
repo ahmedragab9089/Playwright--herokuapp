@@ -3,17 +3,23 @@ class BasePage{
         this.page = page;
         this.formAuthentication = this.page.locator('[href="/login"]');
         this.forgotPassword = this.page.locator('[href="/forgot_password"]');
-    }
+        this.dropdown = this.page.locator('[href="/dropdown"]');
+        }
 
     async openHomePage(){
         await this.page.goto("https://the-internet.herokuapp.com/");
     }
-    async openFormAuthentication(){
+    async openFormAuthenticationPage(){
         await this.formAuthentication.click();
     }
-    async openForgotPassword(){
+    async openForgotPasswordPage(){
         await this.forgotPassword.click();
     }
+
+    async openDropdownPage(){
+        await this.dropdown.click();
+    }
+
 
 
 }
