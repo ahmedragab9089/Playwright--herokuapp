@@ -4,6 +4,7 @@ class BasePage{
         this.formAuthentication = this.page.locator('[href="/login"]');
         this.forgotPassword = this.page.locator('[href="/forgot_password"]');
         this.dropdown = this.page.locator('[href="/dropdown"]');
+        this.inputs = this.page.locator('[href="/inputs"]');
         }
 
     async openHomePage(){
@@ -18,6 +19,9 @@ class BasePage{
 
     async openDropdownPage(){
         await this.dropdown.click();
+    }
+     async openInputsPage(){
+        await this.inputs.click();
     }
 
 
