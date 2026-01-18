@@ -5,6 +5,7 @@ class BasePage{
         this.forgotPassword = this.page.locator('[href="/forgot_password"]');
         this.dropdown = this.page.locator('[href="/dropdown"]');
         this.inputs = this.page.locator('[href="/inputs"]');
+        this.addRemoveElements = this.page.locator('[href="/add_remove_elements/"]');
         }
 
     async openHomePage(){
@@ -22,6 +23,9 @@ class BasePage{
     }
      async openInputsPage(){
         await this.inputs.click();
+    }
+    async openAddRemoveElementsPage(){
+        await this.addRemoveElements.click();
     }
 
 
