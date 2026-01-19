@@ -6,6 +6,7 @@ class BasePage{
         this.dropdown = this.page.locator('[href="/dropdown"]');
         this.inputs = this.page.locator('[href="/inputs"]');
         this.addRemoveElements = this.page.locator('[href="/add_remove_elements/"]');
+        this.basicAuth = this.page.locator('[href="/basic_auth"]');
         }
 
     async openHomePage(){
@@ -21,11 +22,14 @@ class BasePage{
     async openDropdownPage(){
         await this.dropdown.click();
     }
-     async openInputsPage(){
+    async openInputsPage(){
         await this.inputs.click();
     }
     async openAddRemoveElementsPage(){
         await this.addRemoveElements.click();
+    }
+    async openBasicAuthPage(){
+        await this.basicAuth.click();
     }
 
 
