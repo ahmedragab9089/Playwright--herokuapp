@@ -7,6 +7,7 @@ class BasePage{
         this.inputs = this.page.locator('[href="/inputs"]');
         this.addRemoveElements = this.page.locator('[href="/add_remove_elements/"]');
         this.basicAuth = this.page.locator('[href="/basic_auth"]');
+        this.brokenImages = this.page.locator('[href="/broken_images"]');
         }
 
     async openHomePage(){
@@ -30,6 +31,10 @@ class BasePage{
     }
     async openBasicAuthPage(){
         await this.basicAuth.click();
+    }
+
+    async openBrokenImagesPage(){
+        await this.brokenImages.click();
     }
 
 
