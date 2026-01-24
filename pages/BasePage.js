@@ -9,6 +9,8 @@ class BasePage{
         this.basicAuth = this.page.locator('[href="/basic_auth"]');
         this.brokenImages = this.page.locator('[href="/broken_images"]');
         this.checkboxes = this.page.locator('[href="/checkboxes"]');
+        this.contextMenu = this.page.locator('[href="/context_menu"]');
+
         }
 
     async openHomePage(){
@@ -39,6 +41,9 @@ class BasePage{
     }
     async openCheckboxesPage(){
         await this.checkboxes.click();
+    }
+    async openContextMenuPage(){
+        await this.contextMenu.click();
     }
 
 
