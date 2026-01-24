@@ -8,6 +8,7 @@ class BasePage{
         this.addRemoveElements = this.page.locator('[href="/add_remove_elements/"]');
         this.basicAuth = this.page.locator('[href="/basic_auth"]');
         this.brokenImages = this.page.locator('[href="/broken_images"]');
+        this.checkboxes = this.page.locator('[href="/checkboxes"]');
         }
 
     async openHomePage(){
@@ -36,7 +37,9 @@ class BasePage{
     async openBrokenImagesPage(){
         await this.brokenImages.click();
     }
-
+    async openCheckboxesPage(){
+        await this.checkboxes.click();
+    }
 
 
 }
