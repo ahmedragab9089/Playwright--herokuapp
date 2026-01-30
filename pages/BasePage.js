@@ -10,6 +10,7 @@ class BasePage{
         this.brokenImages = this.page.locator('[href="/broken_images"]');
         this.checkboxes = this.page.locator('[href="/checkboxes"]');
         this.contextMenu = this.page.locator('[href="/context_menu"]');
+        this.dragandDrop = this.page.locator('[href="/drag_and_drop"]');
 
         }
 
@@ -45,6 +46,10 @@ class BasePage{
     async openContextMenuPage(){
         await this.contextMenu.click();
     }
+    async openDragAndDropPage(){
+        await this.dragandDrop.click();
+    }
+    
 
 
 }

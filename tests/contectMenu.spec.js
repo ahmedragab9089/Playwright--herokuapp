@@ -5,6 +5,4 @@ test('test context menu', async({basePage, page})=>{
     await basePage.openContextMenuPage();
     const contextMenuPage = new ContextMenuPage(page);
     await contextMenuPage.doRightClick();
-
-    await page.pause();
 });
